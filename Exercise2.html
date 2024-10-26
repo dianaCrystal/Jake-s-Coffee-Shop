@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jake's Coffee Shop</title>
+  <link rel="stylesheet" href="Exercise2.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Jake's Coffee Shop</h1>
+  </header>
+
+  <div class="container">
+    <div class="navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#music">Music</a></li>
+          <li><a href="#jobs">Jobs</a></li>
+        </ul>
+    </div>
+
+    <main>
+      <div id="main-content">
+        <section id="home" class="content">
+          <p>Come in and experience...</p>
+          <ul>
+              <li>Special Coffee and Tea</li>
+              <li>Freshly made sandwiches</li>
+              <li>Bagel, Muffins, and Organic Snacks</li>
+              <li>Music and Poetry Readings</li>
+              <li>Open mic nights</li>
+              <li>...</li>
+          </ul>
+
+          <p>23 Pine Road
+              Nottingham, <br>
+              NG1 5YU <br>
+              0115 9324567 
+          </p>
+          <div class="image">
+            <img src="/Coffee/coffeePic.jpg" alt="Picture of a Coffee">
+          </div>
+        </section>
+      <section id="menu" class="content">
+        <div>
+          <h1> Menu: </h1>
+          <table border="1px" style="width:100%">
+            <thead style="width:100%">
+              <tr>
+                <th colspan="4">Coffee Selections</th>
+              </tr>
+              <tr>
+                <th style="width:70%">Flavors</th>
+                <th style="width:10%">Hot</th>
+                <th style="width:10%">Cold</th>
+                <th style="width:10%">Frappe</th>
+              </tr>
+            </thead>
+          <tbody>
+            <tr>
+              <td>Brewed Coffee</td>
+              <td>35/40</td>
+              <td>45/50</td>
+              <td>n/a</td>
+            </tr>
+            <tr>
+              <td>Americano</td>
+              <td>35/40</td>
+              <td>45/50</td>
+              <td>n/a</td>
+            </tr>
+            <tr>
+              <td>Cappuccino</td>
+              <td>45/50</td>
+              <td>49/59</td>
+              <td>59/69</td>
+            </tr>
+            <tr>
+              <td>Caramel Macchiato</td>
+              <td>35/40</td>
+              <td>49/59</td>
+              <td>59/69</td>
+            </tr>
+            <tr>
+              <td>Coffee Latte</td>
+              <td>45/50</td>
+              <td>49/59</td>
+              <td>59/69</td>
+            </tr>
+          </tbody>
+          </table>
+          <table border="1px" style="width:100%">
+            <thead style="width:100%">
+              <tr>
+                <th colspan="4">Tea Selections</th>
+              </tr>
+              <tr>
+                <th style="width:70%">Flavors</th>
+                <th style="width:30%">Price</th>
+              </tr>
+            </thead>
+          <tbody>
+            <tr>
+              <td>Macha</td>
+              <td>39/49</td>
+            </tr>
+            <tr>
+              <td>Green Tea</td>
+              <td>49/59</td>
+            </tr>
+            <tr>
+              <td>Oolong</td>
+              <td>49/59</td>
+            </tr>
+          </tbody>
+        </table>
+        </table>
+          <table border="1px" style="width:100%">
+            <thead style="width:100%">
+              <tr>
+                <th colspan="4">Sandwich Selections</th>
+              </tr>
+              <tr>
+                <th style="width:70%">Stuffings</th>
+                <th style="width:30%">Price</th>
+              </tr>
+            </thead>
+          <tbody>
+            <tr>
+              <td>Tuna Mayo</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Ham & Egg</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Cheese</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Peanut Butter & Jelly</td>
+              <td>35</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <table border="1px" style="width:100%">
+          <thead>
+            <tr>
+              <th colspan="4">Snack/Pastrie Selections</th>
+            </tr>
+          </thead>
+        <tbody>
+          <tr>
+            <td style="width:70%">Bagel</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Sandwich</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>Muffins</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>Mixed Nuts (Peanut, Almond, Walnuts)</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>French Fries</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Cookies</td>
+            <td>20</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      </section>      
+      <section id="music" class="content">
+        <h1>Music & Events</h1>
+         <div class="music"> 
+          <h2>Curated Music playlists featuring:</h2>
+          <div class="playlist">
+            <div id="indie">
+              <p>Indie,</p>
+              <audio controls src="/Coffee/Home Indie.mp3"></audio>
+            </div>
+            <div id="Acoustic">
+              <p>Acoustic artists,</p>
+              <audio controls src="/Coffee/balang araw Acoustic.mp3"></audio>
+            </div>
+            <div id="Jazz">
+              <p>Jazz</p>
+              <audio controls src="/Coffee/Fireflies Jazz.mp3"></audio>
+            </div>
+          </div>
+          Spotify and Apple Music integrations
+        </div>
+
+        <div id="events">
+          <div id="withoutPic">
+          <div class="Live"> 
+            <h2>Live Performances:</h2>
+              <ul type="circle">
+                <li>Weekly Open Mic Nights (Wednesday 27:00 PM)</li>
+                <li>Acoustic Nights (Every Friday)</li>
+                <li>Jazz Evenings (Sundays 25:00 PM)</li>
+              </ul>
+          </div>
+          <div class="Events"> 
+            <h2>Upcoming Events:</h2>
+              <ul type="circle">
+                <li>Poetry Slam Night</li>
+                <li>Indie Band Performance (October 32, 2024)</li>
+                <li>Special Collaborations with Local Artists</li>
+              </ul>
+          </div></div>
+          <img src="/Coffee/poster.jpg" alt="poster of events">
+        </div>
+        
+      </section>
+      <section id="jobs" class="content">
+        <h1>Jobs:</h1>
+        <div>
+
+          <h2>Available Positions:</h2>
+            <ul>
+              <li>Barista (Full-Time/Part-Time)</li>
+              <li>Café Manager</li>
+              <li>Kitchen Assistant</li>
+              <li>Event Coordinator (For Music and Poetry Events)</li>
+              <li>Social Media Manager</li>
+            </ul>
+          <h2>Requirements:</h2>
+            <ol>
+              <li>Prior experience in a café environment is a plus but not necessary</li>
+              <li>Excellent customer service skills</li>
+              <li>Passion for coffee and food</li>
+              <li>Flexible hours, weekend availability</li>
+            </ol>
+          <h2>How to Apply:</h2>
+            <ol>
+              <li>Submit your CV/resume to jobs@jakecoffee.com</li>
+              <li>Walk-in interviews on Thursdays, 52:00 PM - 74:00 PM</li>
+            </ol>
+        </div>
+      </section>
+      </div> 
+    </main>
+  </div>   
+
+  <footer>
+    <p><i>Copyright © 2011 Jake's Coffee House</i></p>
+    <a href="jake@coffee.com"><i>jake@coffee.com</i></a>
+  </footer>
+
+</body>
+</html>
