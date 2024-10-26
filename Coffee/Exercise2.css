@@ -1,0 +1,199 @@
+.content {
+    display: none;
+}
+
+#home:target,
+#menu:target,
+#music:target,
+#jobs:target {
+    display: block;
+}
+
+body:not(:has(:target)) #home {
+    display: block;
+}
+h1{
+    font-size: 24px;
+    margin: 5px;
+}
+h2{
+    font-size: 20px;
+    margin-top: 10px;
+}
+*{
+    color: #330000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+body{
+    background-color: #ffffcc;
+    display: block;
+    margin: 50px;
+    border:2px solid black ;
+    box-sizing: border-box;
+}
+header,footer{
+    border:2px solid black ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #ccaa66;
+}
+
+a, a i{
+    color: #0000ee;
+    text-decoration: none;
+}
+
+.container{
+    height: 65vh;
+}
+
+.navigation li{
+    padding: 10px;
+}
+ul {
+  list-style-type: none;
+}
+.navigation{
+    border:2px solid black ;
+    background-color: #e8d882;
+    float: left;
+    width: 20%;    
+    height: 100%;
+}
+main{
+    border:2px solid black ;
+    background-color: #f1e8b0;
+    float: right;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    padding: 12px;
+}
+
+#main-content{
+    float: left;
+    height: 100%;
+    width: 100%;
+
+}
+
+#main-content li{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.image{
+    float:  right;
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+
+.image img{
+    padding: 10px;
+    width:  100%;
+    height: 100%;
+}
+#menu::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: var(--bg-image-opacity);
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+
+#menu{
+    --bg-image: url(https://image.slidesdocs.com/responsive-images/background/coffee-culture-illustration-powerpoint-background_e224109f77__960_540.jpg);
+    --bg-image-opacity:.3;
+    isolation: isolate;
+    overflow-y: scroll;
+    margin: 0px;
+    padding:0px;
+    width: 100%;
+    height: 100%;
+}
+
+table{
+    /* width: 100%; */
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+thead tr th{
+    background-color: #dabc81;
+    height: 30px;;
+}
+
+th, td {
+    border-style: dotted;
+  }
+
+
+
+#music{
+    overflow-y: scroll;
+    margin: 0px;
+    padding:0px;
+    width: 100%;
+    height: 100%;
+}
+.music{
+    background-image: url(/Coffee/bgguitar.png);
+    background-repeat: no-repeat;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-size: cover;
+    padding: 50px;
+}
+.playlist{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+.playlist audio{
+    margin-top: 10px;
+    width: 100%;
+}
+
+#indie, #Acoustic, #Jazz{
+    background-color: #fcce71;
+    border-radius: 30px;
+    width: 30%;
+    height: 100px;
+    display: inline-block;
+}
+#events{
+    display: flex;
+    background-image: url(/Coffee/barBg.png);
+    background-repeat: no-repeat;
+	background-position: center;
+	/* background-attachment: fixed; */
+	background-size: cover;
+}
+
+#withoutPic{
+    display: block;
+    float: left;
+    margin: 50px;
+}
+img{
+    float: right;
+    display: block;
+    place-self: initial;
+    margin: 5%;
+    width: 40%;
+}
+
+
+/* only to link to this style sheet, mark up sections (using <div> tags) and set appropriate class and id attributes. */
