@@ -148,7 +148,7 @@ th, td {
     height: 100%;
 }
 .music{
-    background-image: url(/Coffee/bgguitar.png);
+    background-image: url(bgguitar.png);
     background-repeat: no-repeat;
 	background-position: bottom;
 	background-attachment: fixed;
@@ -175,7 +175,7 @@ th, td {
 }
 #events{
     display: flex;
-    background-image: url(/Coffee/barBg.png);
+    background-image: url(barBg.png);
     background-repeat: no-repeat;
 	background-position: center;
 	/* background-attachment: fixed; */
